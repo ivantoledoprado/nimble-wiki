@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="description" content="Compare as onze classes principais, suas funções, complexidade e subclasses.">
+  <meta name="theme-color" content="#171713">
+  <meta name="color-scheme" content="dark light">
+  <title>Visão Geral das Classes · NIMBLE Wiki</title>
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="../assets/images/icon-192.png">
+  <link rel="preload" as="image" href="../assets/images/content/028-l2-p004-classes-parte-1.webp">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-root="../" data-page-type="Índice">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <button type="button" class="icon-button menu-button" id="menu-button" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">N</span><span>NIMBLE <b>Wiki</b></span></a>
+  <form class="search-wrap" role="search">
+    <span aria-hidden="true">⌕</span><input id="search-input" type="search" role="combobox" aria-haspopup="listbox" placeholder="Buscar regras, habilidades, monstros…" autocomplete="off" spellcheck="false" aria-label="Buscar na wiki" aria-controls="search-results" aria-expanded="false" aria-autocomplete="list"><kbd aria-hidden="true">/</kbd>
+    <div id="search-results" class="search-results" role="listbox" aria-label="Resultados da busca" hidden></div><span id="search-status" class="sr-only" aria-live="polite"></span>
+  </form>
+  <a class="quick-access" href="../referencia-rapida/index.html" aria-label="Abrir Referência Rápida"><span aria-hidden="true">⌘</span><b>Referência</b></a>
+  <a class="quick-access gm-access" href="../mestre/comecando/index.html" aria-label="Abrir Guia do Mestre"><span aria-hidden="true">♜</span><b>Mestre</b></a>
+  <a class="quick-access bestiary-access" href="../bestiario/index.html" aria-label="Abrir Bestiário"><span aria-hidden="true">♟</span><b>Bestiário</b></a>
+  <a class="quick-access adventure-access" href="../aventuras/index.html" aria-label="Abrir Aventuras"><span aria-hidden="true">✦</span><b>Aventuras</b></a>
+  <a class="icon-button help-button" href="../ajuda/index.html" aria-label="Abrir ajuda e atalhos"><span aria-hidden="true">?</span></a>
+  <button type="button" class="icon-button" id="theme-button" aria-label="Ativar tema claro" aria-pressed="false"><span aria-hidden="true">◐</span></button>
+  <button type="button" class="icon-button print-button" id="print-button" aria-label="Imprimir página"><span aria-hidden="true">⌁</span></button>
+</header>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Menu lateral">
+    <nav aria-label="Navegação principal">
+      
+      <div class="nav-section"><div class="nav-heading">Início</div>
+        
+          
+          <div class="nav-items">
+          <a href="../index.html" class="nav-link"><span aria-hidden="true">⌂</span>Página Inicial</a><a href="../referencia-rapida/index.html" class="nav-link"><span aria-hidden="true">⌘</span>Referência Rápida</a><a href="../glossario/index.html" class="nav-link"><span aria-hidden="true">≡</span>Glossário</a><a href="../creditos-licencas/index.html" class="nav-link"><span aria-hidden="true">·</span>Créditos, Licenças e Fontes</a><a href="../ajuda/index.html" class="nav-link"><span aria-hidden="true">?</span>Ajuda e Acessibilidade</a><a href="../recursos-oficiais/index.html" class="nav-link"><span aria-hidden="true">›</span>Recursos Oficiais</a>
+          </div>
+        
+      </div>
+      
+      <div class="nav-section"><div class="nav-heading">Livro 1 — Regras</div>
+        
+          <details class="nav-details" ><summary>Introdução</summary>
+          <div class="nav-items">
+          <a href="../regras/comecar/index.html" class="nav-link"><span aria-hidden="true">›</span>Comece Aqui</a><a href="../regras/bom-jogador/index.html" class="nav-link"><span aria-hidden="true">›</span>Como Ser um Bom Jogador</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Regras Básicas</summary>
+          <div class="nav-items">
+          <a href="../regras/atributos/index.html" class="nav-link"><span aria-hidden="true">◆</span>Atributos</a><a href="../regras/pericias/index.html" class="nav-link"><span aria-hidden="true">◆</span>Perícias</a><a href="../regras/testes-e-saves/index.html" class="nav-link"><span aria-hidden="true">◆</span>Testes de Perícia e SAVEs</a><a href="../regras/tamanho/index.html" class="nav-link"><span aria-hidden="true">◆</span>Tamanho</a><a href="../regras/vantagem-desvantagem/index.html" class="nav-link"><span aria-hidden="true">◆</span>Vantagem e Desvantagem</a><a href="../regras/vida-ferimentos-morte/index.html" class="nav-link"><span aria-hidden="true">◆</span>PV, Ferimentos, Morrendo e Morte</a><a href="../regras/movimento-distancia/index.html" class="nav-link"><span aria-hidden="true">◆</span>Deslocamento, Distância, Queda e Movimento Forçado</a><a href="../regras/concentracao-cobertura/index.html" class="nav-link"><span aria-hidden="true">◆</span>Concentração, Cobertura e Esconder-se</a><a href="../regras/agarramento/index.html" class="nav-link"><span aria-hidden="true">◆</span>Agarramento e Contenção</a><a href="../regras/condicoes/index.html" class="nav-link"><span aria-hidden="true">⌘</span>Condições</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Combate</summary>
+          <div class="nav-items">
+          <a href="../combate/acoes/index.html" class="nav-link"><span aria-hidden="true">◆</span>Ações Heroicas</a><a href="../combate/reacoes/index.html" class="nav-link"><span aria-hidden="true">◆</span>Reações Heroicas</a><a href="../combate/armadura-monstros-minions/index.html" class="nav-link"><span aria-hidden="true">◆</span>Armadura dos Monstros e Minions</a><a href="../combate/iniciativa-turnos/index.html" class="nav-link"><span aria-hidden="true">◆</span>Iniciativa, Turnos, Rodadas e Encontros</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Descanso</summary>
+          <div class="nav-items">
+          <a href="../regras/descansos-tempo-livre/index.html" class="nav-link"><span aria-hidden="true">◆</span>Descansos e Tempo Livre</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Criação de Herói</summary>
+          <div class="nav-items">
+          <a href="../herois/criacao/index.html" class="nav-link"><span aria-hidden="true">›</span>Criando um Herói</a><a href="../herois/ficha-progressao/index.html" class="nav-link"><span aria-hidden="true">›</span>Ficha de Personagem e Progressão</a><a href="../herois/especies/index.html" class="nav-link"><span aria-hidden="true">▦</span>Espécies</a><a href="../herois/antecedentes/index.html" class="nav-link"><span aria-hidden="true">▦</span>Antecedentes</a><a href="../herois/motivacoes/index.html" class="nav-link"><span aria-hidden="true">▦</span>Motivações para Aventurar-se</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Equipamentos</summary>
+          <div class="nav-items">
+          <a href="../equipamentos/armaduras/index.html" class="nav-link"><span aria-hidden="true">▦</span>Armaduras e Escudos</a><a href="../equipamentos/armas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Armas e Propriedades</a><a href="../equipamentos/aventura/index.html" class="nav-link"><span aria-hidden="true">▦</span>Equipamentos de Aventura</a><a href="../equipamentos/itens-magicos/index.html" class="nav-link"><span aria-hidden="true">▦</span>Itens Mágicos</a><a href="../equipamentos/pergaminhos-varinhas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Pergaminhos e Varinhas</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Magias</summary>
+          <div class="nav-items">
+          <a href="../magias/regras/index.html" class="nav-link"><span aria-hidden="true">◆</span>Regras de Magia</a><a href="../magias/fogo/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias de Fogo</a><a href="../magias/gelo/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias de Gelo</a><a href="../magias/relampago/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias de Relâmpago</a><a href="../magias/vento/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias de Vento</a><a href="../magias/radiantes/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias Radiantes</a><a href="../magias/necroticas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias Necróticas</a><a href="../magias/utilitarias/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias Utilitárias</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Apêndices</summary>
+          <div class="nav-items">
+          <a href="../regras/variantes/index.html" class="nav-link"><span aria-hidden="true">·</span>Regras Variantes</a>
+          </div></details>
+        
+      </div>
+      
+      <div class="nav-section"><div class="nav-heading">Livro 2 — Heróis</div>
+        
+          <details class="nav-details" open><summary>Classes</summary>
+          <div class="nav-items">
+          <a href="../classes/index.html" class="nav-link active" aria-current="page"><span aria-hidden="true">≡</span>Visão Geral das Classes</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Bárbaro</summary>
+          <div class="nav-items">
+          <a href="../classes/barbaro/index.html" class="nav-link"><span aria-hidden="true">◈</span>Bárbaro</a><a href="../classes/barbaro/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Arsenal Selvagem</a><a href="../classes/barbaro/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Bárbaro</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Trapaceiro</summary>
+          <div class="nav-items">
+          <a href="../classes/trapaceiro/index.html" class="nav-link"><span aria-hidden="true">◈</span>Trapaceiro</a><a href="../classes/trapaceiro/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Truques Sujos</a><a href="../classes/trapaceiro/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Trapaceiro</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Guerreiro</summary>
+          <div class="nav-items">
+          <a href="../classes/guerreiro/index.html" class="nav-link"><span aria-hidden="true">◈</span>Guerreiro</a><a href="../classes/guerreiro/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Ordens, Táticas e Maestrias</a><a href="../classes/guerreiro/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Guerreiro</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Caçador</summary>
+          <div class="nav-items">
+          <a href="../classes/cacador/index.html" class="nav-link"><span aria-hidden="true">◈</span>Caçador</a><a href="../classes/cacador/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Ímpeto da Caçada</a><a href="../classes/cacador/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Caçador</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Mago</summary>
+          <div class="nav-items">
+          <a href="../classes/mago/index.html" class="nav-link"><span aria-hidden="true">◈</span>Mago</a><a href="../classes/mago/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Metamagia e Controle</a><a href="../classes/mago/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Mago</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Juramentado</summary>
+          <div class="nav-items">
+          <a href="../classes/juramentado/index.html" class="nav-link"><span aria-hidden="true">◈</span>Juramentado</a><a href="../classes/juramentado/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Decretos Sagrados</a><a href="../classes/juramentado/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Juramentado</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Bruxo</summary>
+          <div class="nav-items">
+          <a href="../classes/bruxo/index.html" class="nav-link"><span aria-hidden="true">◈</span>Bruxo</a><a href="../classes/bruxo/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Invocações Sombrias</a><a href="../classes/bruxo/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Bruxo</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Pastor</summary>
+          <div class="nav-items">
+          <a href="../classes/pastor/index.html" class="nav-link"><span aria-hidden="true">◈</span>Pastor</a><a href="../classes/pastor/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Graças Sagradas</a><a href="../classes/pastor/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Pastor</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Bardo</summary>
+          <div class="nav-items">
+          <a href="../classes/bardo/index.html" class="nav-link"><span aria-hidden="true">◈</span>Bardo</a><a href="../classes/bardo/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Arsenal Lírico e Contatos</a><a href="../classes/bardo/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Bardo</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Druida</summary>
+          <div class="nav-items">
+          <a href="../classes/druida/index.html" class="nav-link"><span aria-hidden="true">◈</span>Druida</a><a href="../classes/druida/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Formas de Fera e Dádivas Quiméricas</a><a href="../classes/druida/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Druida</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Monge</summary>
+          <div class="nav-items">
+          <a href="../classes/monge/index.html" class="nav-link"><span aria-hidden="true">◈</span>Monge</a><a href="../classes/monge/opcoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Habilidades de Artes Marciais</a><a href="../classes/monge/subclasses/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses de Monge</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Subclasses Narrativas</summary>
+          <div class="nav-items">
+          <a href="../classes/subclasses-narrativas/index.html" class="nav-link"><span aria-hidden="true">·</span>Subclasses Narrativas</a>
+          </div></details>
+        
+      </div>
+      
+      <div class="nav-section"><div class="nav-heading">Livro 3 — Guia do Mestre</div>
+        
+          <details class="nav-details" ><summary>Mestrando</summary>
+          <div class="nav-items">
+          <a href="../mestre/comecando/index.html" class="nav-link"><span aria-hidden="true">›</span>Começando como Mestre</a><a href="../mestre/ferramentas-narrativas/index.html" class="nav-link"><span aria-hidden="true">›</span>Ferramentas Narrativas</a><a href="../mestre/vinhetas-heroicas/index.html" class="nav-link"><span aria-hidden="true">›</span>Vinhetas Heroicas</a><a href="../mestre/o-que-evitar/index.html" class="nav-link"><span aria-hidden="true">›</span>O que Evitar</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Criando Aventuras</summary>
+          <div class="nav-items">
+          <a href="../mestre/criando-aventuras/index.html" class="nav-link"><span aria-hidden="true">›</span>Criando Suas Próprias Aventuras</a><a href="../mestre/desafios-de-pericia/index.html" class="nav-link"><span aria-hidden="true">◆</span>Desafios de Perícia</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Recompensas</summary>
+          <div class="nav-items">
+          <a href="../mestre/recompensas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Recompensas de Aventura</a><a href="../mestre/magias-secretas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Magias Secretas</a><a href="../mestre/ouro-hospedagem/index.html" class="nav-link"><span aria-hidden="true">◆</span>Ouro e Dádivas de Hospedagem</a><a href="../mestre/dadivas/index.html" class="nav-link"><span aria-hidden="true">▦</span>Dádivas</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Monstros</summary>
+          <div class="nav-items">
+          <a href="../mestre/conduzindo-monstros/index.html" class="nav-link"><span aria-hidden="true">›</span>Conduzindo Monstros</a><a href="../mestre/encontros-combate/index.html" class="nav-link"><span aria-hidden="true">›</span>Encontros de Combate</a><a href="../mestre/criador-de-monstros/index.html" class="nav-link"><span aria-hidden="true">·</span>Criador de Monstros</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Bestiário</summary>
+          <div class="nav-items">
+          <a href="../bestiario/index.html" class="nav-link"><span aria-hidden="true">≡</span>Índice do Bestiário</a><a href="../bestiario/kobolds/index.html" class="nav-link"><span aria-hidden="true">♟</span>Kobolds</a><a href="../bestiario/goblins/index.html" class="nav-link"><span aria-hidden="true">♟</span>Goblins</a><a href="../bestiario/bandidos-e-homens-serpente/index.html" class="nav-link"><span aria-hidden="true">♟</span>Bandidos e Homens-Serpente</a><a href="../bestiario/habitantes-da-masmorra/index.html" class="nav-link"><span aria-hidden="true">♟</span>Habitantes da Masmorra</a><a href="../bestiario/colinas-e-campos/index.html" class="nav-link"><span aria-hidden="true">♟</span>Colinas e Campos</a><a href="../bestiario/mortos-vivos/index.html" class="nav-link"><span aria-hidden="true">♟</span>Mortos-vivos</a><a href="../bestiario/habitantes-da-floresta/index.html" class="nav-link"><span aria-hidden="true">♟</span>Habitantes da Floresta</a><a href="../bestiario/cultistas-e-horrores/index.html" class="nav-link"><span aria-hidden="true">♟</span>Cultistas e Horrores</a><a href="../bestiario/subterraneo/index.html" class="nav-link"><span aria-hidden="true">♟</span>Subterrâneo</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Monstros Lendários</summary>
+          <div class="nav-items">
+          <a href="../bestiario/lendarios/regras/index.html" class="nav-link"><span aria-hidden="true">◆</span>Regras de Monstros Lendários</a><a href="../bestiario/lendarios/index.html" class="nav-link"><span aria-hidden="true">≡</span>Índice de Monstros Lendários</a><a href="../bestiario/lendarios/pudge-o-desastrado/index.html" class="nav-link"><span aria-hidden="true">·</span>Pudge, o Desastrado</a><a href="../bestiario/lendarios/grimbeak-a-implacavel/index.html" class="nav-link"><span aria-hidden="true">·</span>Grimbeak, a Implacável</a><a href="../bestiario/lendarios/thorn-lamina-veloz/index.html" class="nav-link"><span aria-hidden="true">·</span>Thorn Lâmina-Veloz</a><a href="../bestiario/lendarios/devastador-das-terras-baixas/index.html" class="nav-link"><span aria-hidden="true">·</span>Devastador das Terras Baixas</a><a href="../bestiario/lendarios/rainha-aranya-mae-da-ninhada/index.html" class="nav-link"><span aria-hidden="true">·</span>Rainha Aranya, Mãe da Ninhada</a><a href="../bestiario/lendarios/nalzar-predadora-suprema/index.html" class="nav-link"><span aria-hidden="true">·</span>Nalzar, Predadora Suprema</a><a href="../bestiario/lendarios/florindris-flagelo-da-floresta/index.html" class="nav-link"><span aria-hidden="true">·</span>Florindris, Flagelo da Floresta</a><a href="../bestiario/lendarios/general-coracao-de-chama/index.html" class="nav-link"><span aria-hidden="true">·</span>General Coração de Chama</a><a href="../bestiario/lendarios/vael-necromante-imortal/index.html" class="nav-link"><span aria-hidden="true">·</span>Vael, Necromante Imortal</a><a href="../bestiario/lendarios/tita-das-florestas-profundas/index.html" class="nav-link"><span aria-hidden="true">·</span>Titã das Florestas Profundas</a><a href="../bestiario/lendarios/ul-vek-despota-psionico/index.html" class="nav-link"><span aria-hidden="true">·</span>Ul&#39;vek, Déspota Psiônico</a><a href="../bestiario/lendarios/dravok-tirano-onividente/index.html" class="nav-link"><span aria-hidden="true">·</span>Dravok, Tirano Onividente</a><a href="../bestiario/lendarios/azriel-senhor-da-dor-e-das-chamas/index.html" class="nav-link"><span aria-hidden="true">·</span>Azriel, Senhor da Dor e das Chamas</a><a href="../bestiario/lendarios/asa-sombria-o-cruel/index.html" class="nav-link"><span aria-hidden="true">·</span>Asa Sombria, o Cruel</a><a href="../bestiario/lendarios/alaric-draegoth-o-conde-carmesim/index.html" class="nav-link"><span aria-hidden="true">·</span>Alaric Draegoth, o Conde Carmesim</a><a href="../bestiario/lendarios/caerys-a-estrela-vazia/index.html" class="nav-link"><span aria-hidden="true">·</span>Caerys, a Estrela Vazia</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Cenário</summary>
+          <div class="nav-items">
+          <a href="../cenario/index.html" class="nav-link"><span aria-hidden="true">⌖</span>Atlas do Cenário</a><a href="../cenario/mapa-regional/index.html" class="nav-link"><span aria-hidden="true">⌖</span>Mapa Regional</a><a href="../cenario/vale-da-esperanca/index.html" class="nav-link"><span aria-hidden="true">◇</span>Vale da Esperança</a><a href="../cenario/merivale/index.html" class="nav-link"><span aria-hidden="true">◇</span>Merivale</a><a href="../cenario/esperanca-distante-o-ultimo-porto/index.html" class="nav-link"><span aria-hidden="true">◇</span>Esperança Distante — O Último Porto</a><a href="../cenario/mata-ancia/index.html" class="nav-link"><span aria-hidden="true">◇</span>Mata Anciã</a><a href="../cenario/dunas-definhantes/index.html" class="nav-link"><span aria-hidden="true">◇</span>Dunas Definhantes</a><a href="../cenario/montanhas-da-forja-gelida/index.html" class="nav-link"><span aria-hidden="true">◇</span>Montanhas da Forja Gélida</a><a href="../cenario/ilhas-altaceu/index.html" class="nav-link"><span aria-hidden="true">◇</span>Ilhas Altacéu</a><a href="../cenario/pantanos-rosnantes/index.html" class="nav-link"><span aria-hidden="true">◇</span>Pântanos Rosnantes</a><a href="../cenario/praga-sombria/index.html" class="nav-link"><span aria-hidden="true">◇</span>Praga Sombria</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Aventuras</summary>
+          <div class="nav-items">
+          <a href="../aventuras/index.html" class="nav-link"><span aria-hidden="true">≡</span>Índice de Aventuras</a><a href="../aventuras/o-jardim-da-morte/index.html" class="nav-link"><span aria-hidden="true">✦</span>O Jardim da Morte</a><a href="../aventuras/a-vinganca-dos-vermes/index.html" class="nav-link"><span aria-hidden="true">✦</span>A Vingança dos Vermes</a><a href="../aventuras/a-caverna-oculta-do-mel/index.html" class="nav-link"><span aria-hidden="true">✦</span>A Caverna Oculta do Mel</a><a href="../aventuras/o-templo-perdido-de-heytet-seqat/index.html" class="nav-link"><span aria-hidden="true">✦</span>O Templo Perdido de Heytet-Seqat</a><a href="../aventuras/as-caravanas-desaparecidas/index.html" class="nav-link"><span aria-hidden="true">✦</span>As Caravanas Desaparecidas</a><a href="../aventuras/incursao-ao-ninho-real/index.html" class="nav-link"><span aria-hidden="true">✦</span>Incursão ao Ninho Real</a><a href="../aventuras/o-legado-da-bruxa/index.html" class="nav-link"><span aria-hidden="true">✦</span>O Legado da Bruxa</a><a href="../aventuras/alem-do-veu-carmesim/index.html" class="nav-link"><span aria-hidden="true">✦</span>Além do Véu Carmesim</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>O Jardim da Morte</summary>
+          <div class="nav-items">
+          <a href="../aventuras/o-jardim-da-morte/um-pequeno-resgate/index.html" class="nav-link"><span aria-hidden="true">✦</span>Um Pequeno Resgate</a><a href="../aventuras/o-jardim-da-morte/goblins-do-rochedo-de-cristal/index.html" class="nav-link"><span aria-hidden="true">✦</span>Goblins do Rochedo de Cristal</a><a href="../aventuras/o-jardim-da-morte/base-de-dedoverde/index.html" class="nav-link"><span aria-hidden="true">✦</span>Base de Dedoverde</a><a href="../aventuras/o-jardim-da-morte/a-aventura-continua/index.html" class="nav-link"><span aria-hidden="true">✦</span>A Aventura Continua!</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Conversão</summary>
+          <div class="nav-items">
+          <a href="../mestre/conversao-5e/index.html" class="nav-link"><span aria-hidden="true">⌘</span>Conversão da 5e</a>
+          </div></details>
+        
+          <details class="nav-details" ><summary>Apêndices</summary>
+          <div class="nav-items">
+          <a href="../mestre/apendice-inspiracoes/index.html" class="nav-link"><span aria-hidden="true">·</span>Apêndice de Inspirações e Para Criadores</a><a href="../mestre/caos/index.html" class="nav-link"><span aria-hidden="true">·</span>Caos e Tabela do Caos</a>
+          </div></details>
+        
+      </div>
+      
+    </nav>
+    <div class="sidebar-note"><strong>Uso pessoal</strong><span>Conteúdo privado · não indexar</span><a href="../ajuda/index.html">Ajuda e acessibilidade</a></div>
+  </aside>
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+  <main id="conteudo" class="content" tabindex="-1">
+  
+    <header class="article-header with-image">
+      <div class="article-header-copy"><div class="breadcrumbs"><a href="../index.html">Início</a><span aria-hidden="true">›</span><span>Livro 2 — Heróis</span><span aria-hidden="true">›</span><span>Classes</span></div>
+      <div class="article-badges"><span class="type-badge">Índice</span><span class="editorial-badge">Revisado · Etapa 6</span></div>
+      <h1>Visão Geral das Classes</h1><p>Compare as onze classes principais, suas funções, complexidade e subclasses.</p><div class="article-meta"><span>Livro 2, págs. 3-5</span><button type="button" class="copy-link" data-copy-link>Copiar link</button></div></div>
+      <figure class="hero-image contain"><img src="../assets/images/content/028-l2-p004-classes-parte-1.webp" alt="Ilustração de fantasia do artigo Visão Geral das Classes." width="447" height="210" loading="eager" decoding="async" fetchpriority="high"></figure>
+    </header>
+  
+    <details class="mobile-toc"><summary>Nesta página</summary><ul><li class="toc-h2"><a href="#aqui-ha-herois">Aqui Há Heróis…</a></li></ul></details>
+    <div class="article-layout"><article class="prose"><div class="image-gallery"><figure><img alt="Galeria das classes do NIMBLE" decoding="async" height="210" loading="lazy" src="../assets/images/content/029-l2-p005-classes-parte-2.webp" width="467"/><figcaption>Livro 2, página 5.</figcaption></figure></div>
+<p class="article-lead">Escolha a classe que define como seu Herói enfrenta perigos, contribui com o Grupo e evolui do Nível 1 ao 20. Cada cartão leva à progressão completa, às opções e às subclasses.</p>
+<div class="class-legend"><span><b>◆</b> direta</span><span><b>◆◆</b> intermediária</span><span><b>◆◆◆</b> maior complexidade</span></div>
+<div class="class-catalog"><a class="class-catalog-card" href="../classes/barbaro/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Bárbaro." decoding="async" height="1195" loading="lazy" src="../assets/images/content/030-l2-p006-barbaro.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Bárbaro</strong><span>Força imparável de ira e ruína.</span><small>Caminho da Névoa Rubra · Caminho do Coração da Montanha</small></span>
+</a><a class="class-catalog-card" href="../classes/trapaceiro/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Trapaceiro." decoding="async" height="1195" loading="lazy" src="../assets/images/content/031-l2-p012-trapaceiro.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 1" class="complexity">◆</span><strong>Trapaceiro</strong><span>Ladino furtivo, traiçoeiro e adepto de golpes baixos.</span><small>Lâmina Silenciosa · Patife</small></span>
+</a><a class="class-catalog-card" href="../classes/guerreiro/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Guerreiro." decoding="async" height="1195" loading="lazy" src="../assets/images/content/032-l2-p018-guerreiro.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Guerreiro</strong><span>Estrategista de campo de batalha, líder e mestre das armas.</span><small>Campeão da Vanguarda · Campeão do Baluarte</small></span>
+</a><a class="class-catalog-card" href="../classes/cacador/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Caçador." decoding="async" height="1195" loading="lazy" src="../assets/images/content/033-l2-p024-cacador.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Caçador</strong><span>Sobrevivente engenhoso, mestre do arco e rastreador habilidoso.</span><small>Caminho das Sombras · Coração Selvagem</small></span>
+</a><a class="class-catalog-card" href="../classes/mago/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Mago." decoding="async" height="1195" loading="lazy" src="../assets/images/content/034-l2-p030-mago.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 3" class="complexity">◆◆◆</span><strong>Mago</strong><span>Molda os elementos do fogo, gelo e relâmpago.</span><small>Invocador do Caos · Invocador do Controle</small></span>
+</a><a class="class-catalog-card" href="../classes/juramentado/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Juramentado." decoding="async" height="1195" loading="lazy" src="../assets/images/content/035-l2-p036-juramentado.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Juramentado</strong><span>Guardião fiel, protetor e vingador dos fracos.</span><small>Juramento de Vingança · Juramento de Refúgio</small></span>
+</a><a class="class-catalog-card" href="../classes/bruxo/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Bruxo." decoding="async" height="1195" loading="lazy" src="../assets/images/content/036-l2-p042-bruxo.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 3" class="complexity">◆◆◆</span><strong>Bruxo</strong><span>Invoca hordas de Minions de Sombra e rouba poder de um Patrono.</span><small>Pacto do Dragão Vermelho · Pacto das Profundezas Abissais</small></span>
+</a><a class="class-catalog-card" href="../classes/pastor/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Pastor." decoding="async" height="1196" loading="lazy" src="../assets/images/content/037-l2-p048-pastor.webp" width="843"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Pastor</strong><span>Domina a vida e a morte ao lado de um companheiro espiritual.</span><small>Luminar da Misericórdia · Luminar da Malícia</small></span>
+</a><a class="class-catalog-card" href="../classes/bardo/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Bardo." decoding="async" height="1195" loading="lazy" src="../assets/images/content/038-l2-p054-bardo.webp" width="841"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 3" class="complexity">◆◆◆</span><strong>Bardo</strong><span>Presença inspiradora, raciocínio afiado e língua ainda mais afiada.</span><small>Arauto do Sarcasmo · Arauto da Coragem</small></span>
+</a><a class="class-catalog-card" href="../classes/druida/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Druida." decoding="async" height="1195" loading="lazy" src="../assets/images/content/039-l2-p060-druida.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 3" class="complexity">◆◆◆</span><strong>Druida</strong><span>Mestre das feras, do clima e da natureza.</span><small>Círculo da Presa e da Garra · Círculo do Céu e da Tempestade</small></span>
+</a><a class="class-catalog-card" href="../classes/monge/index.html">
+<span class="class-catalog-art"><img alt="Personagem de fantasia representando a classe Monge." decoding="async" height="1195" loading="lazy" src="../assets/images/content/040-l2-p066-monge.webp" width="844"/></span>
+<span class="class-catalog-copy"><span aria-label="Complexidade 2" class="complexity">◆◆</span><strong>Monge</strong><span>Artista marcial disciplinado, de mãos e pés velozes.</span><small>Caminho da Chama · Caminho da Dor</small></span>
+</a></div>
+<aside class="class-note"><strong>Subclasses Narrativas</strong><p>Quebrador de Juramento, Lâmina Arcana, Ceifador e Mestre das Feras não são escolhas iniciais comuns. Elas surgem quando acontecimentos decisivos alteram a história do Herói.</p><a href="../classes/subclasses-narrativas/index.html">Consultar Subclasses Narrativas →</a></aside>
+<h2 id="aqui-ha-herois">Aqui Há Heróis…</h2>
+<p>Aqui há heróis… onde dragões cruzam os céus e as sombras se acumulam, onde poderes ancestrais adormecem e novas ameaças surgem, o chamado à aventura ressoa. Aqui, lendas nascem no choque do aço, no clarão das magias e na luta entre luz e trevas.</p>
+<p>Escolha seu caminho. Empunhe seu poder. O mundo aguarda seus heróis.</p>
+<!-- SOURCE_COMPLETE_BOOK2_CLASSES_1_0_1 -->
+<details class="source-complete"><summary>Apresentação integral das classes <span>Livro 2 · páginas 4-5</span></summary><div class="source-complete-body"><div class="source-page-marker">Livro 2 · página 4</div><h3 id="classes-parte-1">Classes - Parte 1</h3><p><strong>Bárbaro — pág. 6.</strong> Uma força imparável de ira e ruína. Escolha entre o frenético Caminho da Névoa Rubra e o indomável Caminho do Coração da Montanha. Complexidade da Classe: ◆◆</p><p><strong>Trapaceiro — pág. 12.</strong> Um ladino furtivo, traiçoeiro e adepto de golpes baixos. Escolha entre a mortal Lâmina Silenciosa e o ardiloso Patife. Complexidade da Classe: ◆</p><p><strong>Guerreiro — pág. 18.</strong> Um estrategista de campo de batalha, líder e mestre de armas. Escolha entre o Campeão da Vanguarda e o Campeão do Baluarte. Complexidade da Classe: ◆◆</p><p><strong>Caçador — pág. 24.</strong> Sobrevivente engenhoso, mestre do arco e rastreador habilidoso. Escolha entre o Caminho das Sombras e o Coração Selvagem. Complexidade da Classe: ◆◆</p><p><strong>Mago — pág. 30.</strong> Empunhe e molde os elementos do fogo, gelo e relâmpago. Escolha entre o Invocador do Caos e o Invocador do Controle. Complexidade da Classe: ◆◆◆</p><p><strong>Juramentado — pág. 36.</strong> Guardião fiel, protetor e vingador dos fracos. Escolha entre o Juramento de Vingança e o Juramento de Refúgio. Complexidade da Classe: ◆◆</p><div class="source-page-marker">Livro 2 · página 5</div><h3 id="classes-parte-2">Classes - Parte 2</h3><p><strong>Bruxo — pág. 42.</strong> Invoque hordas de Minions de sombra descartáveis. Escolha entre o Pacto do Dragão Vermelho e o Pacto das Profundezas Abissais. Complexidade da Classe: ◆◆◆</p><p><strong>Pastor — pág. 48.</strong> Domine a vida e a morte. Lidere um companheiro fiel. Escolha entre o Luminar da Misericórdia e o Luminar da Malícia. Complexidade da Classe: ◆◆</p><p><strong>Bardo — pág. 54.</strong> Presença inspiradora, raciocínio afiado e língua ainda mais afiada. Escolha entre o Arauto do Sarcasmo e o Arauto da Coragem. Complexidade da Classe: ◆◆◆</p><p><strong>Druida — pág. 60.</strong> Mestre das feras e da natureza. Escolha entre o Círculo da Presa e da Garra e o Círculo do Céu e da Tempestade. Complexidade da Classe: ◆◆◆</p><p><strong>Monge — pág. 66.</strong> Um artista marcial disciplinado, de mãos e pés velozes. Escolha entre o Caminho da Chama e o Caminho da Dor. Complexidade da Classe: ◆◆</p><p><strong>Subclasses Extras — pág. 73.</strong> Subclasses especiais escolhidas em momentos decisivos da história: Juramentado (Quebrador de Juramento), Guerreiro (Lâmina Arcana), Bruxo (Ceifador) e Caçador (Mestre das Feras). Complexidade da Subclasse: ◆◆◆</p></div></details></article><aside class="toc" aria-label="Sumário desta página"><div class="toc-title">Nesta página</div><ul><li class="toc-h2"><a href="#aqui-ha-herois">Aqui Há Heróis…</a></li></ul></aside></div>
+    <section class="related-section"><h2>Veja também</h2><div class="related-grid"><a href="../herois/criacao/index.html"><strong>Criando um Herói</strong><span>Etapas completas de criação de personagem.</span></a><a href="../classes/subclasses-narrativas/index.html"><strong>Subclasses Narrativas</strong><span>Mudanças de classe motivadas pela história.</span></a><a href="../referencia-rapida/index.html"><strong>Referência Rápida</strong><span>Regras essenciais durante a sessão.</span></a></div></section>
+    <nav class="page-nav" aria-label="Artigos anterior e seguinte"><a href="../regras/variantes/index.html"><span>← Anterior</span><strong>Regras Variantes</strong></a><a class="next" href="../classes/barbaro/index.html"><span>Próximo →</span><strong>Bárbaro</strong></a></nav>
+    <footer class="article-footer"><span>Livro 2, págs. 3-5</span><span>Versão 1.0.2 · 2026-07-25 · Tradução pessoal revisada · NIMBLE © 2025 Nimble Co.</span></footer>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">A navegação funciona sem JavaScript, mas a busca, os filtros e o modo offline exigem JavaScript.</div></noscript>
+<script src="../assets/js/app.js" defer></script>
+</body></html>
